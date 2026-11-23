@@ -23,7 +23,7 @@ jobs:
           gradle-version: '8.7'
 
       - name: Compiler l'APK
-        working-directory: "Guide APK LesAstresEric-Workflow/LesAstresEric-Hors ligne"
+        working-directory: "LesAstresEric-Workflow-APK-Guide/LesAstresEric-Hors ligne"
         run: gradle assembleDebug --no-daemon
 
       - name: Recuperer l'APK
