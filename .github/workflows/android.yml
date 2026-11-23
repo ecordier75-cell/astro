@@ -26,6 +26,10 @@ jobs:
           pwd
           find . -maxdepth 5 -name settings.gradle -print
           find . -maxdepth 3 -type d -print
+          
+      - name: Préparer les communes françaises
+        run: python3 scripts/prepare_communes.py
+        
       - name: Compiler l'APK
         working-directory: "LesAstresEric-Workflow-APK-Guide/LesAstresEric-Offline"
         run: gradle assembleDebug --no-daemon
