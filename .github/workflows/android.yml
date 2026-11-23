@@ -27,7 +27,7 @@ jobs:
           find . -maxdepth 5 -name settings.gradle -print
           find . -maxdepth 3 -type d -print
       - name: Compiler l'APK
-        working-directory: "LesAstresEric-Workflow-APK-Guide/LesAstresEric-Hors ligne"
+        working-directory: "LesAstresEric-Workflow-APK-Guide/LesAstresEric-Offline"
         run: gradle assembleDebug --no-daemon
 
       - name: Recuperer l'APK
