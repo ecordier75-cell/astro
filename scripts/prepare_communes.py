@@ -22,6 +22,6 @@ for c in data:
     label=f'{name} ({code})'+(f' — {cp[0]}' if cp else '')
     rows.append([label,round(lat,6),round(lon,6),zone])
 assert len(rows)>30000, 'Coordonnées insuffisantes : compilation interrompue'
-path=Path(__file__).resolve().parents[1]/'app/src/main/assets/communes-france.js'
+path = Path(__file__).resolve().parents[1] / 'LesAstresEric-Workflow-APK-Guide' / 'LesAstresEric-Offline' / 'app' / 'src' / 'main' / 'assets' / 'communes-france.js'
 path.write_text('window.COMMUNES_FRANCE='+json.dumps(rows,ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf8')
 print(f'{len(rows)} communes intégrées dans {path} ({path.stat().st_size} octets)')
