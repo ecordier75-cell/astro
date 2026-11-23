@@ -1,0 +1,35 @@
+{
+  "sample_size": 144,
+  "max_planet_error_degrees": {
+    "Soleil": 0.01598,
+    "Lune": 0.1172,
+    "Mercure": 0.02058,
+    "Vénus": 0.01924,
+    "Mars": 0.02946,
+    "Jupiter": 0.03244,
+    "Saturne": 0.03116,
+    "Uranus": 0.07659,
+    "Neptune": 0.01946,
+    "Pluton": 0.02285
+  },
+  "worst_planet_cases": {
+    "Soleil": "Sydney 1966-04",
+    "Lune": "Sydney 1990-10",
+    "Mercure": "Sydney 1925-10",
+    "Vénus": "Sydney 1966-01",
+    "Mars": "Sydney 2099-04",
+    "Jupiter": "Sydney 1950-07",
+    "Saturne": "Sydney 1980-01",
+    "Uranus": "Sydney 1966-10",
+    "Neptune": "Sydney 1940-10",
+    "Pluton": "Sydney 2099-10"
+  },
+  "max_placidus_cusp_error_degrees": 0.00828,
+  "worst_placidus_case": [
+    "Paris 1990-01",
+    7
+  ],
+  "scope": "144 cases, 1900–2099, four seasons, Paris/Sydney/New York, noon UTC; not a global accuracy guarantee",
+  "reference": "Swiss Ephemeris Moshier via pyswisseph, used only for comparison; not included in Android app",
+  "publication_ready": false
+}

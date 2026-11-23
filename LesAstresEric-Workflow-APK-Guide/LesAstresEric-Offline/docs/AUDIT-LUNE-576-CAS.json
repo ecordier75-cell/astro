@@ -1,0 +1,51 @@
+{
+  "sample_size": 576,
+  "max_lunar_error_degrees": 0.1283728,
+  "mean_lunar_error_degrees": 0.0375184,
+  "cases_over_0_1_degree": 39,
+  "worst_10": [
+    {
+      "case": "Paris 1990-10-15 00:00 UTC",
+      "error_degrees": 0.1283728
+    },
+    {
+      "case": "Sydney 1990-10-15 00:00 UTC",
+      "error_degrees": 0.1283728
+    },
+    {
+      "case": "New York 1990-10-15 00:00 UTC",
+      "error_degrees": 0.1283728
+    },
+    {
+      "case": "Paris 1990-10-15 06:00 UTC",
+      "error_degrees": 0.1232377
+    },
+    {
+      "case": "Sydney 1990-10-15 06:00 UTC",
+      "error_degrees": 0.1232377
+    },
+    {
+      "case": "New York 1990-10-15 06:00 UTC",
+      "error_degrees": 0.1232377
+    },
+    {
+      "case": "Paris 2099-10-15 00:00 UTC",
+      "error_degrees": 0.118491
+    },
+    {
+      "case": "Sydney 2099-10-15 00:00 UTC",
+      "error_degrees": 0.118491
+    },
+    {
+      "case": "New York 2099-10-15 00:00 UTC",
+      "error_degrees": 0.118491
+    },
+    {
+      "case": "Paris 1990-10-15 12:00 UTC",
+      "error_degrees": 0.1171953
+    }
+  ],
+  "scope": "576 cases: 1900–2099, four months, four UTC times, three cities; locations repeat same geocentric Moon for each time",
+  "reference": "Swiss Ephemeris Moshier via pyswisseph, used for audit only",
+  "publication_ready": false
+}

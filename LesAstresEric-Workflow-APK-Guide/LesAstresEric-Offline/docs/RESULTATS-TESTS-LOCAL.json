@@ -1,0 +1,26 @@
+{
+  "smoke.js": {
+    "exit_code": 0,
+    "output": "Tests structurels réussis : thèmes, maisons, validations, aspects.\nATTENTION : ces tests ne valident PAS la précision astronomique.\n"
+  },
+  "validation.test.cjs": {
+    "exit_code": 0,
+    "output": "Tests de validation réussis ; précision astronomique non vérifiée.\n"
+  },
+  "regression.test.cjs": {
+    "exit_code": 0,
+    "output": "Tests de régression réussis : cohérence des sorties, pas précision astronomique.\n"
+  },
+  "offset-regression.test.cjs": {
+    "exit_code": 0,
+    "output": "Tests fuseaux à 15 minutes réussis.\n"
+  },
+  "pluto.test.cjs": {
+    "exit_code": 0,
+    "output": "Pluton : calcul présent et valeurs finies (précision non garantie).\n"
+  },
+  "release-gate.cjs": {
+    "exit_code": 0,
+    "output": "ss Ephemeris embarqué.\"\n    },\n    {\n      \"name\": \"Pluton calculé\",\n      \"pass\": false,\n      \"detail\": \"Pluton absent du moteur.\"\n    },\n    {\n      \"name\": \"Fuseaux historiques automatiques\",\n      \"pass\": false,\n      \"detail\": \"Le décalage UTC est saisi manuellement.\"\n    },\n    {\n      \"name\": \"Validation astronomique large\",\n      \"pass\": false,\n      \"detail\": \"27 cas ne couvrent pas toutes les dates, latitudes et situations.\"\n    },\n    {\n      \"name\": \"Audit de référence présent\",\n      \"pass\": true,\n      \"detail\": \"Rapport de comparaison disponible.\"\n    },\n    {\n      \"name\": \"Projet Android présent\",\n      \"pass\": true,\n      \"detail\": \"Sources Android présentes.\"\n    }\n  ]\n}\n"
+  }
+}

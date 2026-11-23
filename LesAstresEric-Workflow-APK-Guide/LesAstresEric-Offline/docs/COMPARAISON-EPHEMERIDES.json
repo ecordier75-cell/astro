@@ -1,0 +1,95 @@
+[
+  {
+    "cas": "Paris 2000",
+    "jd": 2451545,
+    "ecarts_planetaires_degres": {
+      "Soleil": 0.0125,
+      "Lune": 0.0228,
+      "Mercure": 0.0178,
+      "Vénus": 0.0135,
+      "Mars": 0.0131,
+      "Jupiter": 0.0929,
+      "Saturne": 0.2054,
+      "Uranus": 0.002,
+      "Neptune": 0.0021,
+      "Pluton": "ABSENT"
+    },
+    "ecart_ascendant_degres": 0.0091,
+    "ecarts_maisons_degres": [
+      0.0091,
+      0.0061,
+      0.0042,
+      0.0031,
+      0.0028,
+      0.0041,
+      0.0091,
+      0.0061,
+      0.0042,
+      0.0031,
+      0.0028,
+      0.0041
+    ]
+  },
+  {
+    "cas": "Paris 1966",
+    "jd": 2439331.340277778,
+    "ecarts_planetaires_degres": {
+      "Soleil": 0.006,
+      "Lune": 0.0201,
+      "Mercure": 0.0034,
+      "Vénus": 0.0112,
+      "Mars": 0.0132,
+      "Jupiter": 0.0911,
+      "Saturne": 0.1962,
+      "Uranus": 0.0743,
+      "Neptune": 0.0031,
+      "Pluton": "ABSENT"
+    },
+    "ecart_ascendant_degres": 0.0079,
+    "ecarts_maisons_degres": [
+      0.0079,
+      0.0045,
+      0.0027,
+      0.0027,
+      0.0035,
+      0.005,
+      0.0079,
+      0.0045,
+      0.0027,
+      0.0027,
+      0.0035,
+      0.005
+    ]
+  },
+  {
+    "cas": "Sydney 2024",
+    "jd": 2460476.4583333335,
+    "ecarts_planetaires_degres": {
+      "Soleil": 0.0059,
+      "Lune": 0.0058,
+      "Mercure": 0.0167,
+      "Vénus": 0.0121,
+      "Mars": 0.0139,
+      "Jupiter": 0.0018,
+      "Saturne": 0.0749,
+      "Uranus": 0.0323,
+      "Neptune": 0.0022,
+      "Pluton": "ABSENT"
+    },
+    "ecart_ascendant_degres": 0.0033,
+    "ecarts_maisons_degres": [
+      0.0033,
+      0.0023,
+      0.0008,
+      0.0005,
+      0.001,
+      0.002,
+      0.0033,
+      0.0023,
+      0.0008,
+      0.0005,
+      0.001,
+      0.002
+    ]
+  }
+]

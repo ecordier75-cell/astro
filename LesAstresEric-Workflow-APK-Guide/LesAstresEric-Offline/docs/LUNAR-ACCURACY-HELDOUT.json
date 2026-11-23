@@ -1,0 +1,61 @@
+{
+  "independent_instants": 192,
+  "max_error_degrees": 0.01684974,
+  "mean_error_degrees": 0.00869896,
+  "over_0_1_degree": 0,
+  "target_max_error_degrees": 0.1,
+  "passes": true,
+  "worst_10": [
+    {
+      "date": "2031-02-15",
+      "time_utc": "21:00",
+      "error_degrees": 0.01684974
+    },
+    {
+      "date": "2031-02-15",
+      "time_utc": "15:00",
+      "error_degrees": 0.01658574
+    },
+    {
+      "date": "2031-02-15",
+      "time_utc": "09:00",
+      "error_degrees": 0.01632442
+    },
+    {
+      "date": "2011-02-15",
+      "time_utc": "15:00",
+      "error_degrees": 0.01626387
+    },
+    {
+      "date": "2011-02-15",
+      "time_utc": "09:00",
+      "error_degrees": 0.0162493
+    },
+    {
+      "date": "2011-02-15",
+      "time_utc": "21:00",
+      "error_degrees": 0.01622429
+    },
+    {
+      "date": "2011-02-15",
+      "time_utc": "03:00",
+      "error_degrees": 0.01617604
+    },
+    {
+      "date": "2031-02-15",
+      "time_utc": "03:00",
+      "error_degrees": 0.01607917
+    },
+    {
+      "date": "2011-05-15",
+      "time_utc": "21:00",
+      "error_degrees": 0.01569437
+    },
+    {
+      "date": "2011-05-15",
+      "time_utc": "15:00",
+      "error_degrees": 0.01567483
+    }
+  ],
+  "note": "Held-out lunar audit: 192 new UTC instants not in original gate; Swiss Ephemeris used only for tests."
+}

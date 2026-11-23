@@ -1,0 +1,85 @@
+{
+  "cases": 144,
+  "computed": 96,
+  "rejected": 48,
+  "reference_failures": 0,
+  "compared_cusps": 1152,
+  "max_error_degrees": 0.015748,
+  "above_0_1_degrees": 0,
+  "worst_10": [
+    {
+      "case": "66 1900-07 00:00",
+      "cusp": 6,
+      "error_degrees": 0.015748
+    },
+    {
+      "case": "66 1900-07 00:00",
+      "cusp": 12,
+      "error_degrees": 0.015748
+    },
+    {
+      "case": "-66 1900-07 12:00",
+      "cusp": 6,
+      "error_degrees": 0.015646
+    },
+    {
+      "case": "-66 1900-07 12:00",
+      "cusp": 12,
+      "error_degrees": 0.015646
+    },
+    {
+      "case": "-66 1900-01 00:00",
+      "cusp": 6,
+      "error_degrees": 0.015504
+    },
+    {
+      "case": "-66 1900-01 00:00",
+      "cusp": 12,
+      "error_degrees": 0.015504
+    },
+    {
+      "case": "66 1900-01 12:00",
+      "cusp": 6,
+      "error_degrees": 0.015461
+    },
+    {
+      "case": "66 1900-01 12:00",
+      "cusp": 12,
+      "error_degrees": 0.015461
+    },
+    {
+      "case": "65.5 1900-07 00:00",
+      "cusp": 6,
+      "error_degrees": 0.014925
+    },
+    {
+      "case": "65.5 1900-07 00:00",
+      "cusp": 12,
+      "error_degrees": 0.014925
+    }
+  ],
+  "rejected_sample": [
+    {
+      "case": "-67 1900-01 00:00",
+      "reason": "Placidus indisponible aux latitudes polaires : choisir maisons égales ou signes entiers."
+    },
+    {
+      "case": "-67 1900-01 12:00",
+      "reason": "Placidus indisponible aux latitudes polaires : choisir maisons égales ou signes entiers."
+    },
+    {
+      "case": "-67 1900-07 00:00",
+      "reason": "Placidus indisponible aux latitudes polaires : choisir maisons égales ou signes entiers."
+    },
+    {
+      "case": "-67 1900-07 12:00",
+      "reason": "Placidus indisponible aux latitudes polaires : choisir maisons égales ou signes entiers."
+    },
+    {
+      "case": "-67 2024-01 00:00",
+      "reason": "Placidus indisponible aux latitudes polaires : choisir maisons égales ou signes entiers."
+    }
+  ],
+  "reference": "Swiss Ephemeris pyswisseph (external test dependency, not bundled)",
+  "publication_ready": false
+}

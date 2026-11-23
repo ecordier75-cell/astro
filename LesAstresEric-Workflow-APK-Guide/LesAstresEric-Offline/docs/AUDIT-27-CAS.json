@@ -1,0 +1,17 @@
+{
+  "nombre_de_themes": 27,
+  "erreur_max_planetes_en_degres": {
+    "Soleil": 0.0131,
+    "Lune": 0.0723,
+    "Mercure": 0.0118,
+    "Vénus": 0.019,
+    "Mars": 0.0254,
+    "Jupiter": 0.2484,
+    "Saturne": 0.5908,
+    "Uranus": 0.0743,
+    "Neptune": 0.0174,
+    "Pluton": "ABSENT"
+  },
+  "erreur_max_maisons_placidus_en_degres": 0.0045,
+  "avertissement": "Comparaison externe uniquement ; moteur de référence non embarqué. UTC imposé, fuseaux historiques non testés."
+}

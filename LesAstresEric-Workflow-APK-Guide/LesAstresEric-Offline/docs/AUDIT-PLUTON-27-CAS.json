@@ -1,0 +1,170 @@
+{
+  "description": "Audit indépendant de Pluton, 27 cas, 12:00 UTC, Swiss Ephemeris Moshier",
+  "max_error_degrees": 0.02035,
+  "mean_error_degrees": 0.01135,
+  "cases": [
+    {
+      "case": "Paris 1900",
+      "computed": 77.18904,
+      "reference": 77.18064,
+      "absolute_error_degrees": 0.00841
+    },
+    {
+      "case": "Sydney 1900",
+      "computed": 77.18904,
+      "reference": 77.18064,
+      "absolute_error_degrees": 0.00841
+    },
+    {
+      "case": "New York 1900",
+      "computed": 77.18904,
+      "reference": 77.18064,
+      "absolute_error_degrees": 0.00841
+    },
+    {
+      "case": "Paris 1925",
+      "computed": 103.55501,
+      "reference": 103.5426,
+      "absolute_error_degrees": 0.01241
+    },
+    {
+      "case": "Sydney 1925",
+      "computed": 103.55501,
+      "reference": 103.5426,
+      "absolute_error_degrees": 0.01241
+    },
+    {
+      "case": "New York 1925",
+      "computed": 103.55501,
+      "reference": 103.5426,
+      "absolute_error_degrees": 0.01241
+    },
+    {
+      "case": "Paris 1950",
+      "computed": 137.29446,
+      "reference": 137.29097,
+      "absolute_error_degrees": 0.00349
+    },
+    {
+      "case": "Sydney 1950",
+      "computed": 137.29446,
+      "reference": 137.29097,
+      "absolute_error_degrees": 0.00349
+    },
+    {
+      "case": "New York 1950",
+      "computed": 137.29446,
+      "reference": 137.29097,
+      "absolute_error_degrees": 0.00349
+    },
+    {
+      "case": "Paris 1966",
+      "computed": 166.65629,
+      "reference": 166.64152,
+      "absolute_error_degrees": 0.01477
+    },
+    {
+      "case": "Sydney 1966",
+      "computed": 166.65629,
+      "reference": 166.64152,
+      "absolute_error_degrees": 0.01477
+    },
+    {
+      "case": "New York 1966",
+      "computed": 166.65629,
+      "reference": 166.64152,
+      "absolute_error_degrees": 0.01477
+    },
+    {
+      "case": "Paris 1980",
+      "computed": 199.16577,
+      "reference": 199.15231,
+      "absolute_error_degrees": 0.01347
+    },
+    {
+      "case": "Sydney 1980",
+      "computed": 199.16577,
+      "reference": 199.15231,
+      "absolute_error_degrees": 0.01347
+    },
+    {
+      "case": "New York 1980",
+      "computed": 199.16577,
+      "reference": 199.15231,
+      "absolute_error_degrees": 0.01347
+    },
+    {
+      "case": "Paris 2000",
+      "computed": 250.34992,
+      "reference": 250.34967,
+      "absolute_error_degrees": 0.00025
+    },
+    {
+      "case": "Sydney 2000",
+      "computed": 250.34992,
+      "reference": 250.34967,
+      "absolute_error_degrees": 0.00025
+    },
+    {
+      "case": "New York 2000",
+      "computed": 250.34992,
+      "reference": 250.34967,
+      "absolute_error_degrees": 0.00025
+    },
+    {
+      "case": "Paris 2024",
+      "computed": 300.82753,
+      "reference": 300.84038,
+      "absolute_error_degrees": 0.01285
+    },
+    {
+      "case": "Sydney 2024",
+      "computed": 300.82753,
+      "reference": 300.84038,
+      "absolute_error_degrees": 0.01285
+    },
+    {
+      "case": "New York 2024",
+      "computed": 300.82753,
+      "reference": 300.84038,
+      "absolute_error_degrees": 0.01285
+    },
+    {
+      "case": "Paris 2050",
+      "computed": 340.30524,
+      "reference": 340.32559,
+      "absolute_error_degrees": 0.02035
+    },
+    {
+      "case": "Sydney 2050",
+      "computed": 340.30524,
+      "reference": 340.32559,
+      "absolute_error_degrees": 0.02035
+    },
+    {
+      "case": "New York 2050",
+      "computed": 340.30524,
+      "reference": 340.32559,
+      "absolute_error_degrees": 0.02035
+    },
+    {
+      "case": "Paris 2099",
+      "computed": 34.31897,
+      "reference": 34.33509,
+      "absolute_error_degrees": 0.01613
+    },
+    {
+      "case": "Sydney 2099",
+      "computed": 34.31897,
+      "reference": 34.33509,
+      "absolute_error_degrees": 0.01613
+    },
+    {
+      "case": "New York 2099",
+      "computed": 34.31897,
+      "reference": 34.33509,
+      "absolute_error_degrees": 0.01613
+    }
+  ],
+  "warning": "Le moteur embarqué reste approximatif. La référence Swiss Ephemeris n’est pas embarquée dans Android."
+}

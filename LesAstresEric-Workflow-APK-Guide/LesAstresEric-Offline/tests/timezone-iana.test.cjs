@@ -1,0 +1,10 @@
+const fs=require('fs'),vm=require('vm'),assert=require('node:assert/strict');
+const ctx=vm.createContext({Intl,Date});vm.runInContext(fs.readFileSync('app/src/main/assets/engine.js','utf8')+';globalThis.Astro=Astro',ctx);
+const base={name:'Test',date:'2024-07-15',time:'12:00',offset:'+00:00',zone:'Europe/Paris',lat:48.8566,lon:2.3522,zodiac:'tropical',houses:'egales'};
+const a=ctx.Astro.chart(base),b=ctx.Astro.chart({...base,zone:'',offset:'+02:00'});
+assert.ok(Math.abs(a.jd-b.jd)<1e-8);
+const jan=ctx.Astro.chart({...base,date:'2024-01-15',offset:'+01:00'});const janAuto=ctx.Astro.chart({...base,date:'2024-01-15'});assert.ok(Math.abs(jan.jd-janAuto.jd)<1e-8);assert.throws(()=>ctx.Astro.chart({...base,date:'2024-03-31',time:'02:30'}));assert.throws(()=>ctx.Astro.chart({...base,date:'2024-10-27',time:'02:30'}),/ambiguë/);
+const winter=ctx.Astro.chart({...base,date:'2024-10-27',time:'02:30',zone:'',offset:'+01:00'});
+const summer=ctx.Astro.chart({...base,date:'2024-10-27',time:'02:30',zone:'',offset:'+02:00'});
+assert.ok(Math.abs(winter.jd-summer.jd)>0.04);
+console.log('Fuseaux IANA : tests réussis (heures manquantes et ambiguës).');

@@ -1,0 +1,97 @@
+{
+  "cases": 560,
+  "computed": 480,
+  "rejected": 80,
+  "reference_failures": 0,
+  "compared_cusps": 5760,
+  "max_error_degrees": 0.046272,
+  "worst_10": [
+    {
+      "case": "Reykjavik 2000-04-15 06:00",
+      "cusp": 1,
+      "error_degrees": 0.046272
+    },
+    {
+      "case": "Reykjavik 2000-04-15 06:00",
+      "cusp": 7,
+      "error_degrees": 0.046272
+    },
+    {
+      "case": "Reykjavik 2000-10-15 18:00",
+      "cusp": 1,
+      "error_degrees": 0.046126
+    },
+    {
+      "case": "Reykjavik 2000-10-15 18:00",
+      "cusp": 7,
+      "error_degrees": 0.046126
+    },
+    {
+      "case": "Reykjavik 2000-01-15 12:00",
+      "cusp": 1,
+      "error_degrees": 0.044342
+    },
+    {
+      "case": "Reykjavik 2000-01-15 12:00",
+      "cusp": 7,
+      "error_degrees": 0.044342
+    },
+    {
+      "case": "Reykjavik 1900-07-15 00:00",
+      "cusp": 1,
+      "error_degrees": 0.04424
+    },
+    {
+      "case": "Reykjavik 1900-07-15 00:00",
+      "cusp": 7,
+      "error_degrees": 0.04424
+    },
+    {
+      "case": "Reykjavik 2000-07-15 00:00",
+      "cusp": 1,
+      "error_degrees": 0.043566
+    },
+    {
+      "case": "Reykjavik 2000-07-15 00:00",
+      "cusp": 7,
+      "error_degrees": 0.043566
+    }
+  ],
+  "rejections_sample": [
+    {
+      "case": "Tromso 1900-01-15 00:00",
+      "reason": "Placidus indisponible aux latitudes polaires : choisir maisons égales ou signes entiers."
+    },
+    {
+      "case": "Tromso 1900-01-15 06:00",
+      "reason": "Placidus indisponible aux latitudes polaires : choisir maisons égales ou signes entiers."
+    },
+    {
+      "case": "Tromso 1900-01-15 12:00",
+      "reason": "Placidus indisponible aux latitudes polaires : choisir maisons égales ou signes entiers."
+    },
+    {
+      "case": "Tromso 1900-01-15 18:00",
+      "reason": "Placidus indisponible aux latitudes polaires : choisir maisons égales ou signes entiers."
+    },
+    {
+      "case": "Tromso 1900-04-15 00:00",
+      "reason": "Placidus indisponible aux latitudes polaires : choisir maisons égales ou signes entiers."
+    },
+    {
+      "case": "Tromso 1900-04-15 06:00",
+      "reason": "Placidus indisponible aux latitudes polaires : choisir maisons égales ou signes entiers."
+    },
+    {
+      "case": "Tromso 1900-04-15 12:00",
+      "reason": "Placidus indisponible aux latitudes polaires : choisir maisons égales ou signes entiers."
+    },
+    {
+      "case": "Tromso 1900-04-15 18:00",
+      "reason": "Placidus indisponible aux latitudes polaires : choisir maisons égales ou signes entiers."
+    }
+  ],
+  "reference_failures_sample": [],
+  "reference": "Swiss Ephemeris via pyswisseph; not bundled into app",
+  "publication_ready": false
+}

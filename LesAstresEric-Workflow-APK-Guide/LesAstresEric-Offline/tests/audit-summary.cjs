@@ -1,0 +1,1 @@
+const fs=require('node:fs');const a=JSON.parse(fs.readFileSync('docs/AUDIT-REPRODUCTIBLE-2026-11-23.json','utf8'));console.log(JSON.stringify(a.ecarts_max_degres,null,2));if(a.ecarts_max_degres.Jupiter>0.1||a.ecarts_max_degres.Saturne>0.1)console.log('ATTENTION : moteur actuel non conforme à une tolérance de 0,1° pour Jupiter/Saturne.');

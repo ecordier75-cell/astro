@@ -1,0 +1,61 @@
+{
+  "independent_instants": 192,
+  "max_error_degrees": 0.01564939,
+  "mean_error_degrees": 0.00649315,
+  "over_0_1_degree": 0,
+  "target_max_error_degrees": 0.1,
+  "passes": true,
+  "worst_10": [
+    {
+      "date": "2050-04-15",
+      "time_utc": "18:00",
+      "error_degrees": 0.01564939
+    },
+    {
+      "date": "2050-04-15",
+      "time_utc": "12:00",
+      "error_degrees": 0.0155776
+    },
+    {
+      "date": "2050-04-15",
+      "time_utc": "06:00",
+      "error_degrees": 0.01552064
+    },
+    {
+      "date": "2050-04-15",
+      "time_utc": "00:00",
+      "error_degrees": 0.01547829
+    },
+    {
+      "date": "2099-10-15",
+      "time_utc": "00:00",
+      "error_degrees": 0.01524193
+    },
+    {
+      "date": "2099-10-15",
+      "time_utc": "06:00",
+      "error_degrees": 0.01521253
+    },
+    {
+      "date": "2099-10-15",
+      "time_utc": "12:00",
+      "error_degrees": 0.01518509
+    },
+    {
+      "date": "2050-01-15",
+      "time_utc": "00:00",
+      "error_degrees": 0.01516538
+    },
+    {
+      "date": "2099-10-15",
+      "time_utc": "18:00",
+      "error_degrees": 0.01515464
+    },
+    {
+      "date": "2050-01-15",
+      "time_utc": "06:00",
+      "error_degrees": 0.01507917
+    }
+  ],
+  "note": "Geocentric Moon: 192 unique UTC instants, not 576 independent cases. Swiss Ephemeris used only for tests."
+}

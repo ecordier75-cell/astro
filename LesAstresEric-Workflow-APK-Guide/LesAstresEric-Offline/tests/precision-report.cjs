@@ -1,0 +1,1 @@
+const a=require('../docs/AUDIT-INDEPENDANT-27-CAS.json');console.log(a.max_error_degrees);console.log('Rapport historique : Pluton était absent lors de cet audit ; il a été ajouté depuis, sans validation de précision.');

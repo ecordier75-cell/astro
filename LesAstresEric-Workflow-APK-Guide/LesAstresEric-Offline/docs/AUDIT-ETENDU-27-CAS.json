@@ -1,0 +1,19 @@
+{
+  "sample_size": 27,
+  "max_planet_error_degrees": {
+    "Soleil": 0.01309,
+    "Lune": 0.07225,
+    "Mercure": 0.01181,
+    "Vénus": 0.01903,
+    "Mars": 0.02538,
+    "Jupiter": 0.0323,
+    "Saturne": 0.02299,
+    "Uranus": 0.07427,
+    "Neptune": 0.01745,
+    "Pluton": 0.02035
+  },
+  "max_placidus_cusp_error_degrees": 0.00455,
+  "scope": "27 cases, 1900–2099, three cities, noon UTC; no historic time-zone validation",
+  "reference": "pyswisseph using Moshier mode, comparison only; no Swiss Ephemeris included in app",
+  "publication_ready": false
+}

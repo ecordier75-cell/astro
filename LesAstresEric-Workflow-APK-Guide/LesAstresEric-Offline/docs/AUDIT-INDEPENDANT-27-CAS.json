@@ -1,0 +1,423 @@
+{
+  "method": "Swiss Ephemeris Moshier, 27 cases, 12 UTC",
+  "max_error_degrees": {
+    "Soleil": 0.01309,
+    "Lune": 0.07225,
+    "Mercure": 0.01181,
+    "Vénus": 0.01903,
+    "Mars": 0.02538,
+    "Jupiter": 0.24836,
+    "Saturne": 0.5908,
+    "Uranus": 0.07427,
+    "Neptune": 0.01745,
+    "Maisons Placidus": 0.00455
+  },
+  "cases": [
+    {
+      "case": "Paris 1900",
+      "errors_degrees": {
+        "Soleil": 0.00334,
+        "Lune": 0.03998,
+        "Mercure": 0.00103,
+        "Vénus": 0.00261,
+        "Mars": 0.00777,
+        "Jupiter": 0.24836,
+        "Saturne": 0.5908,
+        "Uranus": 0.03974,
+        "Neptune": 0.00301,
+        "Maisons Placidus": 0.00455
+      }
+    },
+    {
+      "case": "Sydney 1900",
+      "errors_degrees": {
+        "Soleil": 0.00334,
+        "Lune": 0.03998,
+        "Mercure": 0.00103,
+        "Vénus": 0.00261,
+        "Mars": 0.00777,
+        "Jupiter": 0.24836,
+        "Saturne": 0.5908,
+        "Uranus": 0.03974,
+        "Neptune": 0.00301,
+        "Maisons Placidus": 0.00415
+      }
+    },
+    {
+      "case": "New York 1900",
+      "errors_degrees": {
+        "Soleil": 0.00334,
+        "Lune": 0.03998,
+        "Mercure": 0.00103,
+        "Vénus": 0.00261,
+        "Mars": 0.00777,
+        "Jupiter": 0.24836,
+        "Saturne": 0.5908,
+        "Uranus": 0.03974,
+        "Neptune": 0.00301,
+        "Maisons Placidus": 0.00429
+      }
+    },
+    {
+      "case": "Paris 1925",
+      "errors_degrees": {
+        "Soleil": 0.01033,
+        "Lune": 0.03227,
+        "Mercure": 0.01181,
+        "Vénus": 0.01589,
+        "Mars": 0.01125,
+        "Jupiter": 0.19664,
+        "Saturne": 0.56167,
+        "Uranus": 0.00545,
+        "Neptune": 0.00552,
+        "Maisons Placidus": 0.00302
+      }
+    },
+    {
+      "case": "Sydney 1925",
+      "errors_degrees": {
+        "Soleil": 0.01033,
+        "Lune": 0.03227,
+        "Mercure": 0.01181,
+        "Vénus": 0.01589,
+        "Mars": 0.01125,
+        "Jupiter": 0.19664,
+        "Saturne": 0.56167,
+        "Uranus": 0.00545,
+        "Neptune": 0.00552,
+        "Maisons Placidus": 0.00298
+      }
+    },
+    {
+      "case": "New York 1925",
+      "errors_degrees": {
+        "Soleil": 0.01033,
+        "Lune": 0.03227,
+        "Mercure": 0.01181,
+        "Vénus": 0.01589,
+        "Mars": 0.01125,
+        "Jupiter": 0.19664,
+        "Saturne": 0.56167,
+        "Uranus": 0.00545,
+        "Neptune": 0.00552,
+        "Maisons Placidus": 0.0036
+      }
+    },
+    {
+      "case": "Paris 1950",
+      "errors_degrees": {
+        "Soleil": 0.00206,
+        "Lune": 0.01531,
+        "Mercure": 0.01106,
+        "Vénus": 0.00713,
+        "Mars": 0.00028,
+        "Jupiter": 0.1413,
+        "Saturne": 0.49134,
+        "Uranus": 0.04341,
+        "Neptune": 0.00055,
+        "Maisons Placidus": 0.00089
+      }
+    },
+    {
+      "case": "Sydney 1950",
+      "errors_degrees": {
+        "Soleil": 0.00206,
+        "Lune": 0.01531,
+        "Mercure": 0.01106,
+        "Vénus": 0.00713,
+        "Mars": 0.00028,
+        "Jupiter": 0.1413,
+        "Saturne": 0.49134,
+        "Uranus": 0.04341,
+        "Neptune": 0.00055,
+        "Maisons Placidus": 0.00021
+      }
+    },
+    {
+      "case": "New York 1950",
+      "errors_degrees": {
+        "Soleil": 0.00206,
+        "Lune": 0.01531,
+        "Mercure": 0.01106,
+        "Vénus": 0.00713,
+        "Mars": 0.00028,
+        "Jupiter": 0.1413,
+        "Saturne": 0.49134,
+        "Uranus": 0.04341,
+        "Neptune": 0.00055,
+        "Maisons Placidus": 0.00104
+      }
+    },
+    {
+      "case": "Paris 1966",
+      "errors_degrees": {
+        "Soleil": 0.00607,
+        "Lune": 0.01683,
+        "Mercure": 0.00328,
+        "Vénus": 0.01114,
+        "Mars": 0.01315,
+        "Jupiter": 0.09109,
+        "Saturne": 0.19606,
+        "Uranus": 0.07427,
+        "Neptune": 0.00304,
+        "Maisons Placidus": 0.00346
+      }
+    },
+    {
+      "case": "Sydney 1966",
+      "errors_degrees": {
+        "Soleil": 0.00607,
+        "Lune": 0.01683,
+        "Mercure": 0.00328,
+        "Vénus": 0.01114,
+        "Mars": 0.01315,
+        "Jupiter": 0.09109,
+        "Saturne": 0.19606,
+        "Uranus": 0.07427,
+        "Neptune": 0.00304,
+        "Maisons Placidus": 0.00289
+      }
+    },
+    {
+      "case": "New York 1966",
+      "errors_degrees": {
+        "Soleil": 0.00607,
+        "Lune": 0.01683,
+        "Mercure": 0.00328,
+        "Vénus": 0.01114,
+        "Mars": 0.01315,
+        "Jupiter": 0.09109,
+        "Saturne": 0.19606,
+        "Uranus": 0.07427,
+        "Neptune": 0.00304,
+        "Maisons Placidus": 0.00295
+      }
+    },
+    {
+      "case": "Paris 1980",
+      "errors_degrees": {
+        "Soleil": 0.01182,
+        "Lune": 0.02096,
+        "Mercure": 0.01065,
+        "Vénus": 0.01307,
+        "Mars": 0.01206,
+        "Jupiter": 0.0965,
+        "Saturne": 0.37774,
+        "Uranus": 0.06559,
+        "Neptune": 0.01,
+        "Maisons Placidus": 0.0023
+      }
+    },
+    {
+      "case": "Sydney 1980",
+      "errors_degrees": {
+        "Soleil": 0.01182,
+        "Lune": 0.02096,
+        "Mercure": 0.01065,
+        "Vénus": 0.01307,
+        "Mars": 0.01206,
+        "Jupiter": 0.0965,
+        "Saturne": 0.37774,
+        "Uranus": 0.06559,
+        "Neptune": 0.01,
+        "Maisons Placidus": 0.00229
+      }
+    },
+    {
+      "case": "New York 1980",
+      "errors_degrees": {
+        "Soleil": 0.01182,
+        "Lune": 0.02096,
+        "Mercure": 0.01065,
+        "Vénus": 0.01307,
+        "Mars": 0.01206,
+        "Jupiter": 0.0965,
+        "Saturne": 0.37774,
+        "Uranus": 0.06559,
+        "Neptune": 0.01,
+        "Maisons Placidus": 0.00311
+      }
+    },
+    {
+      "case": "Paris 2000",
+      "errors_degrees": {
+        "Soleil": 0.01309,
+        "Lune": 0.07225,
+        "Mercure": 0.01129,
+        "Vénus": 0.01903,
+        "Mars": 0.01704,
+        "Jupiter": 0.05746,
+        "Saturne": 0.16025,
+        "Uranus": 0.00918,
+        "Neptune": 0.0125,
+        "Maisons Placidus": 0.00355
+      }
+    },
+    {
+      "case": "Sydney 2000",
+      "errors_degrees": {
+        "Soleil": 0.01309,
+        "Lune": 0.07225,
+        "Mercure": 0.01129,
+        "Vénus": 0.01903,
+        "Mars": 0.01704,
+        "Jupiter": 0.05746,
+        "Saturne": 0.16025,
+        "Uranus": 0.00918,
+        "Neptune": 0.0125,
+        "Maisons Placidus": 0.00354
+      }
+    },
+    {
+      "case": "New York 2000",
+      "errors_degrees": {
+        "Soleil": 0.01309,
+        "Lune": 0.07225,
+        "Mercure": 0.01129,
+        "Vénus": 0.01903,
+        "Mars": 0.01704,
+        "Jupiter": 0.05746,
+        "Saturne": 0.16025,
+        "Uranus": 0.00918,
+        "Neptune": 0.0125,
+        "Maisons Placidus": 0.00401
+      }
+    },
+    {
+      "case": "Paris 2024",
+      "errors_degrees": {
+        "Soleil": 0.00808,
+        "Lune": 0.05125,
+        "Mercure": 0.00603,
+        "Vénus": 0.01398,
+        "Mars": 0.01564,
+        "Jupiter": 0.00035,
+        "Saturne": 0.08387,
+        "Uranus": 0.03042,
+        "Neptune": 0.00258,
+        "Maisons Placidus": 0.00145
+      }
+    },
+    {
+      "case": "Sydney 2024",
+      "errors_degrees": {
+        "Soleil": 0.00808,
+        "Lune": 0.05125,
+        "Mercure": 0.00603,
+        "Vénus": 0.01398,
+        "Mars": 0.01564,
+        "Jupiter": 0.00035,
+        "Saturne": 0.08387,
+        "Uranus": 0.03042,
+        "Neptune": 0.00258,
+        "Maisons Placidus": 0.00049
+      }
+    },
+    {
+      "case": "New York 2024",
+      "errors_degrees": {
+        "Soleil": 0.00808,
+        "Lune": 0.05125,
+        "Mercure": 0.00603,
+        "Vénus": 0.01398,
+        "Mars": 0.01564,
+        "Jupiter": 0.00035,
+        "Saturne": 0.08387,
+        "Uranus": 0.03042,
+        "Neptune": 0.00258,
+        "Maisons Placidus": 0.00049
+      }
+    },
+    {
+      "case": "Paris 2050",
+      "errors_degrees": {
+        "Soleil": 0.00086,
+        "Lune": 0.00594,
+        "Mercure": 0.00072,
+        "Vénus": 0.00227,
+        "Mars": 0.00933,
+        "Jupiter": 0.08152,
+        "Saturne": 0.23068,
+        "Uranus": 0.06303,
+        "Neptune": 0.0029,
+        "Maisons Placidus": 0.00346
+      }
+    },
+    {
+      "case": "Sydney 2050",
+      "errors_degrees": {
+        "Soleil": 0.00086,
+        "Lune": 0.00594,
+        "Mercure": 0.00072,
+        "Vénus": 0.00227,
+        "Mars": 0.00933,
+        "Jupiter": 0.08152,
+        "Saturne": 0.23068,
+        "Uranus": 0.06303,
+        "Neptune": 0.0029,
+        "Maisons Placidus": 0.00277
+      }
+    },
+    {
+      "case": "New York 2050",
+      "errors_degrees": {
+        "Soleil": 0.00086,
+        "Lune": 0.00594,
+        "Mercure": 0.00072,
+        "Vénus": 0.00227,
+        "Mars": 0.00933,
+        "Jupiter": 0.08152,
+        "Saturne": 0.23068,
+        "Uranus": 0.06303,
+        "Neptune": 0.0029,
+        "Maisons Placidus": 0.00278
+      }
+    },
+    {
+      "case": "Paris 2099",
+      "errors_degrees": {
+        "Soleil": 0.0044,
+        "Lune": 0.00402,
+        "Mercure": 0.00454,
+        "Vénus": 0.0106,
+        "Mars": 0.02538,
+        "Jupiter": 0.12262,
+        "Saturne": 0.24785,
+        "Uranus": 0.02856,
+        "Neptune": 0.01745,
+        "Maisons Placidus": 0.00134
+      }
+    },
+    {
+      "case": "Sydney 2099",
+      "errors_degrees": {
+        "Soleil": 0.0044,
+        "Lune": 0.00402,
+        "Mercure": 0.00454,
+        "Vénus": 0.0106,
+        "Mars": 0.02538,
+        "Jupiter": 0.12262,
+        "Saturne": 0.24785,
+        "Uranus": 0.02856,
+        "Neptune": 0.01745,
+        "Maisons Placidus": 0.00036
+      }
+    },
+    {
+      "case": "New York 2099",
+      "errors_degrees": {
+        "Soleil": 0.0044,
+        "Lune": 0.00402,
+        "Mercure": 0.00454,
+        "Vénus": 0.0106,
+        "Mars": 0.02538,
+        "Jupiter": 0.12262,
+        "Saturne": 0.24785,
+        "Uranus": 0.02856,
+        "Neptune": 0.01745,
+        "Maisons Placidus": 0.00066
+      }
+    }
+  ],
+  "pluto": "absent"
+}
