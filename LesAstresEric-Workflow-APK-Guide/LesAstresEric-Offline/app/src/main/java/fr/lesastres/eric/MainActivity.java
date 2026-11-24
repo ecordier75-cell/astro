@@ -50,7 +50,16 @@ public class MainActivity extends Activity {
     conn.setRequestMethod("POST"); conn.setDoOutput(true); conn.setRequestProperty("Content-Type","application/json"); conn.setRequestProperty("x-goog-api-key",key);
     org.json.JSONObject body = new org.json.JSONObject().put("contents",new org.json.JSONArray().put(new org.json.JSONObject().put("parts",new org.json.JSONArray().put(new org.json.JSONObject().put("text",prompt)))));
     try(java.io.OutputStream out=conn.getOutputStream()){out.write(body.toString().getBytes(java.nio.charset.StandardCharsets.UTF_8));}
-    int status=conn.getResponseCode(); if(status!=200)return new org.json.JSONObject().put("error","Gemini : HTTP "+status+" (vérifiez clé, modèle et quota)").toString();
+    int status=conn.getResponseCode();
+    if(status!=200){
+     String detail="";
+     try(java.io.InputStream in=conn.getErrorStream(); java.io.ByteArrayOutputStream out=new java.io.ByteArrayOutputStream()){
+      if(in!=null){byte[] buf=new byte[2048];int n;while((n=in.read(buf))!=-1 && out.size()<65536)out.write(buf,0,n);
+       org.json.JSONObject err=new org.json.JSONObject(out.toString("UTF-8")).optJSONObject("error");
+       if(err!=null)detail=err.optString("status")+" : "+err.optString("message");}
+     }catch(Exception ignored){}
+     return new org.json.JSONObject().put("error","Gemini HTTP "+status+" — "+detail.replace(key,"[clé masquée]")).toString();
+    }
     try(java.io.InputStream in=conn.getInputStream(); java.io.ByteArrayOutputStream out=new java.io.ByteArrayOutputStream()){byte[] buf=new byte[4096];int n;while((n=in.read(buf))!=-1){out.write(buf,0,n);if(out.size()>2000000)throw new Exception("Réponse trop volumineuse");}return out.toString("UTF-8");}
    }catch(Exception e){return "{\"error\":\"Connexion impossible ou délai dépassé.\"}";}finally{if(conn!=null)conn.disconnect();}
   }
