@@ -29,9 +29,17 @@ public class MainActivity extends Activity {
   web.setWebViewClient(new WebViewClient() {
    @Override public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
     String url = request.getUrl().toString();
+    if (url.equals("https://aistudio.google.com/apikey")) {
+     try { startActivity(new android.content.Intent(android.content.Intent.ACTION_VIEW, android.net.Uri.parse(url))); } catch (android.content.ActivityNotFoundException e) { android.widget.Toast.makeText(MainActivity.this, "Ouvrez aistudio.google.com/apikey dans votre navigateur.", android.widget.Toast.LENGTH_LONG).show(); }
+     return true;
+    }
     return !url.startsWith("file:///android_asset/");
    }
    @Override public boolean shouldOverrideUrlLoading(WebView view, String url) {
+    if (url.equals("https://aistudio.google.com/apikey")) {
+     try { startActivity(new android.content.Intent(android.content.Intent.ACTION_VIEW, android.net.Uri.parse(url))); } catch (android.content.ActivityNotFoundException e) { android.widget.Toast.makeText(MainActivity.this, "Ouvrez aistudio.google.com/apikey dans votre navigateur.", android.widget.Toast.LENGTH_LONG).show(); }
+     return true;
+    }
     return !url.startsWith("file:///android_asset/");
    }
   });
