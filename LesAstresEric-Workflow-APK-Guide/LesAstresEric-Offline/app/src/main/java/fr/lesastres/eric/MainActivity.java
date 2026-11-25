@@ -49,6 +49,16 @@ public class MainActivity extends Activity {
   web.loadUrl("file:///android_asset/index.html");
  }
  public class Bridge {
+  @JavascriptInterface public String loadProfiles() {
+   return getSharedPreferences("birth_profiles", Context.MODE_PRIVATE).getString("profiles", "[]");
+  }
+  @JavascriptInterface public boolean saveProfiles(String value) {
+   if(value == null || value.length()>500000) return false;
+   try { org.json.JSONArray a=new org.json.JSONArray(value); if(a.length()>200)return false;
+    return getSharedPreferences("birth_profiles", Context.MODE_PRIVATE).edit().putString("profiles",a.toString()).commit();
+   } catch(Exception e){return false;}
+  }
+
   private String requestGemini(String key, String model, String prompt) {
    boolean listing = model.equals("LIST");
    javax.net.ssl.HttpsURLConnection conn = null;
