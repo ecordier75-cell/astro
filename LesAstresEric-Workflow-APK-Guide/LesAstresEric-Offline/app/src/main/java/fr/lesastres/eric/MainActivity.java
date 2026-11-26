@@ -48,7 +48,39 @@ public class MainActivity extends Activity {
   setContentView(web);
   web.loadUrl("file:///android_asset/index.html");
  }
+ private static final String KEY_ALIAS = "astres_gemini_v1";
+ private javax.crypto.SecretKey storageKey(boolean create) throws Exception {
+  java.security.KeyStore ks=java.security.KeyStore.getInstance("AndroidKeyStore"); ks.load(null);
+  if(ks.containsAlias(KEY_ALIAS)) return (javax.crypto.SecretKey)ks.getKey(KEY_ALIAS,null);
+  if(!create) throw new java.security.KeyStoreException("Missing key");
+  javax.crypto.KeyGenerator gen=javax.crypto.KeyGenerator.getInstance("AES","AndroidKeyStore");
+  gen.init(new android.security.keystore.KeyGenParameterSpec.Builder(KEY_ALIAS, android.security.keystore.KeyProperties.PURPOSE_ENCRYPT | android.security.keystore.KeyProperties.PURPOSE_DECRYPT).setBlockModes(android.security.keystore.KeyProperties.BLOCK_MODE_GCM).setEncryptionPaddings(android.security.keystore.KeyProperties.ENCRYPTION_PADDING_NONE).setKeySize(256).build());
+  return gen.generateKey();
+ }
  public class Bridge {
+  @JavascriptInterface public boolean saveApiKey(String value) {
+   if(value==null || value.trim().isEmpty() || value.length()>512)return false;
+   try {
+    javax.crypto.Cipher c=javax.crypto.Cipher.getInstance("AES/GCM/NoPadding"); c.init(javax.crypto.Cipher.ENCRYPT_MODE,storageKey(true));
+    String iv=android.util.Base64.encodeToString(c.getIV(),android.util.Base64.NO_WRAP);
+    String data=android.util.Base64.encodeToString(c.doFinal(value.trim().getBytes(java.nio.charset.StandardCharsets.UTF_8)),android.util.Base64.NO_WRAP);
+    return getSharedPreferences("gemini_private",MODE_PRIVATE).edit().putString("encrypted",iv+":"+data).commit();
+   }catch(Exception e){return false;}
+  }
+  @JavascriptInterface public String loadApiKey() {
+   String value=getSharedPreferences("gemini_private",MODE_PRIVATE).getString("encrypted",null);
+   if(value==null)return "";
+   try {
+    String[] parts=value.split(":",2);
+    javax.crypto.Cipher c=javax.crypto.Cipher.getInstance("AES/GCM/NoPadding");
+    c.init(javax.crypto.Cipher.DECRYPT_MODE,storageKey(false),new javax.crypto.spec.GCMParameterSpec(128,android.util.Base64.decode(parts[0],android.util.Base64.NO_WRAP)));
+    return new String(c.doFinal(android.util.Base64.decode(parts[1],android.util.Base64.NO_WRAP)),java.nio.charset.StandardCharsets.UTF_8);
+   }catch(Exception e){return null;}
+  }
+  @JavascriptInterface public boolean clearApiKey() {
+   return getSharedPreferences("gemini_private",MODE_PRIVATE).edit().remove("encrypted").commit();
+  }
+
   @JavascriptInterface public String loadProfiles() {
    return getSharedPreferences("birth_profiles", Context.MODE_PRIVATE).getString("profiles", "[]");
   }
