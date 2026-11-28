@@ -14,6 +14,15 @@ import android.webkit.JavascriptInterface;
 
 public class MainActivity extends Activity {
  private WebView web;
+ private byte[] studioPng;
+ @Override protected void onActivityResult(int requestCode,int resultCode,android.content.Intent data){
+  super.onActivityResult(requestCode,resultCode,data);
+  if(requestCode!=741)return;
+  byte[] bytes=studioPng;studioPng=null;
+  if(resultCode!=RESULT_OK||data==null||data.getData()==null||bytes==null)return;
+  try(java.io.OutputStream out=getContentResolver().openOutputStream(data.getData())){if(out==null)throw new java.io.IOException();out.write(bytes);android.widget.Toast.makeText(this,"PNG enregistré",android.widget.Toast.LENGTH_LONG).show();}catch(Exception e){android.widget.Toast.makeText(this,"Enregistrement impossible",android.widget.Toast.LENGTH_LONG).show();}
+ }
+
  @Override public void onCreate(Bundle state) {
   super.onCreate(state);
   web = new WebView(this);
@@ -58,6 +67,11 @@ public class MainActivity extends Activity {
   return gen.generateKey();
  }
  public class Bridge {
+  @JavascriptInterface public void saveStudioPng(String data){
+   if(data==null||!data.startsWith("data:image/png;base64,")||data.length()>16000000)return;
+   try{byte[] bytes=android.util.Base64.decode(data.substring(22),android.util.Base64.DEFAULT);runOnUiThread(()->{studioPng=bytes;android.content.Intent intent=new android.content.Intent(android.content.Intent.ACTION_CREATE_DOCUMENT);intent.addCategory(android.content.Intent.CATEGORY_OPENABLE);intent.setType("image/png");intent.putExtra(android.content.Intent.EXTRA_TITLE,"Les-Astres-Eric.png");try{startActivityForResult(intent,741);}catch(Exception e){studioPng=null;android.widget.Toast.makeText(MainActivity.this,"Sélecteur de fichiers indisponible",android.widget.Toast.LENGTH_LONG).show();}});}catch(Exception e){}
+  }
+
   @JavascriptInterface public boolean saveApiKey(String value) {
    if(value==null || value.trim().isEmpty() || value.length()>512)return false;
    try {
